@@ -39,11 +39,6 @@ RUN  wget http://phpmemcacheadmin.googlecode.com/files/phpMemcachedAdmin-1.2.2-r
 
 # Define mountable directories.
 
-RUN mkdir /phpmemcachedadmin
-RUN mkdir /phpmemcachedadmin/Config
-RUN mv /usr/share/nginx/html/Config/Memcache.php /phpmemcachedadmin/Config/Memcache.php
-RUN rmdir /usr/share/nginx/html/Config/
-RUN ln -s /phpmemcachedadmin/Config /usr/share/nginx/html/
 RUN chown -R www-data:www-data /usr/share/nginx/html
 
 # Define working directory.
