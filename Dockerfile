@@ -1,6 +1,6 @@
 #
 # phpmemcachedadmin Dockerfile
-# hi5
+# hi6
 #
 FROM ubuntu:14.04
 MAINTAINER robv email: phynias@gmail.com
